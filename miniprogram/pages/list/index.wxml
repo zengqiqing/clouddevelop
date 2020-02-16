@@ -1,0 +1,34 @@
+<h2 class="header_title">影评广场</h2>
+<view class='search_box'>
+  <input placeholder='请输入要搜索的用户' value="{{searchName}}" type="input" bindinput='inputEvent'></input>
+  <view class='search_btn' data-type="{{1}}" form-type="submit" bindtap='searchEvent'>搜索</view>
+  <view class='search_btn' data-type="{{0}}" form-type="submit" bindtap='searchEvent'>清空</view>
+</view>
+<view wx:for="{{commentsList}}" wx:for-item="item" class='chunk'>
+  <view id="{{item.id}}">
+    <view class="list_top_box">
+      <view class='userMsg'>
+        <image class='header_img' src="{{item.avatarImg}}"></image>
+        <view class='header_name'>{{item.userName}}</view>
+        <view class='header_name'>{{item.add_time}}</view>
+      </view>
+      <view class="change_btn_box">
+        <view class='change_btn' data-id="{{item._id}}" bindtap='delectEvent'>删除</view>
+        <view class='change_btn' data-item="{{item}}" bindtap='upDateEvent'>修改</view>
+      </view>
+
+    </view>
+    <view class='content_box'>{{item.content}}</view>
+  </view>
+</view>
+
+<view wx:if="{{showPop}}">
+  <view class='mask'></view>
+  <view  class='content_pop'>
+    <textarea value='{{popContent}}'type="input"  bindinput='editTextArea'></textarea>
+    <view class='pop_btn_box'>
+      <view bindtap='surePop'>确定</view>
+      <view bindtap='cancelPop'>取消</view>
+    </view>
+  </view>
+</view>

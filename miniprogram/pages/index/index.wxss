@@ -1,0 +1,13 @@
+.index_box{
+  padding: 10px;
+}
+.sub_title{
+  font-size: 14px;
+  border-bottom: 1px solid #FA8072;
+  display: inline-block;
+}
+.index_textarea{
+  width: 100%;
+  background: #FFDAB9;
+  margin-top: 6px;
+}

@@ -1,0 +1,8 @@
+<view class='my_box'>
+  <image class="my_header_img" src="https://wx2.sinaimg.cn/crop.35.0.569.427.240/007O7SS5ly4gb58fx6fr0j30hs0bvdg0.jpg"></image>
+<view>我的</view>
+</view>
+<view class='home_tab' bindtap='jumpMyFilmList'>
+  <view>我的影评</view>
+  <view>></view>
+</view>
