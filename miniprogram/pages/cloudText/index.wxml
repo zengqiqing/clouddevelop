@@ -1,0 +1,2 @@
+<button bindtap="clickEvent_01">云函数操作--001</button>
+<button bindtap="clickEvent_02">云函数操作--002</button>

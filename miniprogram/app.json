@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/cloudText/index",
     "pages/list/index",
     "pages/home/index",
     "pages/index/index"
@@ -35,5 +36,6 @@
         "selectedIconPath": "images/tab/me_select.png"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

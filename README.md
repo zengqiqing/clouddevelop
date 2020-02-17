@@ -10,3 +10,13 @@
 
 - [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
 
+##云函数的使用
+1.在cloudfunctions文件夹中选好你的环境
+2.在cloudfunctions文件夹目录下新建node.js云函数
+3.写完逻辑后，记得右击：上传并部署
+4.右击，打开本地调试，进行测试
+5.测试通过后，可以到前端js页面进行调用
+调用方法有2种：
+  ①.调用数据库的，用db.collection("指定数据库名称").get()……
+  ②.调用接口的，参考云函数cloudText_02语法。使用request.get({url})……
+6.上传、下载、删除 图片到云存储，参考云函数cloudText_03文件下的index.js文件
